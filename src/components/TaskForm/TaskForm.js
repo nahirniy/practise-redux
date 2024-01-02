@@ -9,7 +9,9 @@ export const TaskForm = () => {
   const handleSubmit = event => {
     event.preventDefault();
 
-    if (!event.value) {
+    const input = event.target.children[0];
+
+    if (!input.value) {
       return;
     }
 
